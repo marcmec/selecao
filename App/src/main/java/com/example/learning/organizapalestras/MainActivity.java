@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         btnturno= findViewById(R.id.btnturno);
 
         txt= findViewById(R.id.track);
-        txt.setText("TRACK A 9h as 12h");
+        txt.setText("TRACK 'A' 9h as 12h");
         networking= findViewById(R.id.txtNetworking);
         networking.setText("PAUSA PARA ALMOCO");
 
@@ -168,13 +168,13 @@ Buttons();
             public void onClick(View v) {
                 if(mudarTrack){
                     listView.setAdapter(adapter1);
-                    txt.setText("TRACK 'B' MANHA 9h as 12h");
+                    txt.setText("TRACK 'B' 9h as 12h");
                     btn.setText("VER TRACK 'A' MANHA");
                     mudarTrack =false;
                     networking.setText("PAUSA PARA ALMOCO");
 
                 }else{
-                    txt.setText("TRACK 'A' MANHA 9H as 12h");
+                    txt.setText("TRACK 'A'  9H as 12h");
                     btn.setText("VER TRACK 'B' MANHA");
                     listView.setAdapter(adapter);
                     mudarTrack =true;
@@ -188,11 +188,11 @@ Buttons();
             @Override
             public void onClick(View v) {
                 if(mudarTrack){
-                    txt.setText("TRACK 'A' TARDE 13h as 17h");
+                    txt.setText("TRACK 'A' 13h as 17h");
                     listView.setAdapter(adapter1a);
                     networking.setText("Evento de NetWorking!");
                 }else{
-                    txt.setText("TRACK 'B' TARDE 13h as 17h");
+                    txt.setText("TRACK 'B' 13h as 17h");
                     listView.setAdapter(adapter2a);
                     networking.setText("Evento de NetWorking!");
                 }
