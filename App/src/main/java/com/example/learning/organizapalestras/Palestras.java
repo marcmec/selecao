@@ -9,14 +9,25 @@ public class Palestras {
             return hora;
         }
 
+    public String getCurso() {
+        return curso;
+    }
 
-    public Palestras(String curso, int hora){
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+
+    public void setHora(int hora) {
+        this.hora = hora;
+    }
+
+    public Palestras(String curso){
         this.curso=curso;
-        this.hora=hora;
+
     }
 
     @Override
     public String toString() {
-        return  String.valueOf(hora)+" min-"+ " "+ curso;
+        return  curso;
     }
 }
